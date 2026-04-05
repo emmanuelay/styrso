@@ -209,14 +209,6 @@
       color: var(--color-muted);
     }
 
-    ul.clean a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    ul.clean a:hover strong {
-      color: var(--color-accent);
-    }
 
     /* Rules list */
     ul.rules {
@@ -248,13 +240,13 @@
       margin: 3rem calc(-50vw + 50%);
     }
 
-    /* Inspiration links */
-    .inspiration-links {
+    /* Card links (shared style for Explore and Inspiration) */
+    .card-links {
       display: grid;
       gap: 0.75rem;
     }
 
-    .inspiration-links a {
+    .card-links a {
       display: flex;
       align-items: center;
       gap: 0.75rem;
@@ -268,12 +260,17 @@
       transition: border-color 0.2s, box-shadow 0.2s;
     }
 
-    .inspiration-links a:hover {
+    .card-links a:hover {
       border-color: var(--color-accent);
       box-shadow: 0 2px 8px rgba(61, 107, 94, 0.1);
     }
 
-    .inspiration-links a .arrow {
+    .card-links a .detail {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+
+    .card-links a .arrow {
       margin-left: auto;
       color: var(--color-accent);
       font-size: 1.2rem;
@@ -469,31 +466,44 @@
       <img class="gallery-img" src="img/valentino-casavecchia-bVfRuPnxJU8-unsplash.jpg" alt="Aerial view of the Gothenburg archipelago">
 
       <h3>Restaurants &amp; Cafes</h3>
-      <ul class="clean">
-        <li>
-          <a href="https://pensionatskaret.se/restaurang/" target="_blank" rel="noopener"><strong>Styrsö Skäret Restaurant</strong></a>
-          <span class="detail">Great food with a sea view</span>
-        </li>
-        <li>
-          <a href="https://www.obergska.se/" target="_blank" rel="noopener"><strong>Cafe Öbergska</strong></a>
-          <span class="detail">Cozy cafe, perfect for fika</span>
-        </li>
-        <li>
-          <a href="https://www.isbolaget.com" target="_blank" rel="noopener"><strong>Isbolaget</strong></a>
-          <span class="detail">On neighboring Donsö, reachable by a short walk over the bridge</span>
-        </li>
-      </ul>
+      <div class="card-links">
+        <a href="https://pensionatskaret.se/restaurang/" target="_blank" rel="noopener">
+          <span>
+            <strong>Styrsö Skäret Restaurant</strong>
+            <span class="detail">Great food with a sea view</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://www.obergska.se/" target="_blank" rel="noopener">
+          <span>
+            <strong>Cafe Öbergska</strong>
+            <span class="detail">Cozy cafe, perfect for fika</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://www.isbolaget.com" target="_blank" rel="noopener">
+          <span>
+            <strong>Isbolaget</strong>
+            <span class="detail">On neighboring Donsö, reachable by a short walk over the bridge</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
 
       <h3>Grocery</h3>
-      <ul class="clean">
-        <li>
-          <a href="https://www.ica.se/butiker/nara/goteborg/ica-tangen-1003744/" target="_blank" rel="noopener"><strong>Ica Nära Tången</strong></a>
-          <span class="detail">The closest grocery store</span>
-        </li>
-        <li>
-          <strong>Tempo Styrsö</strong>
-        </li>
-      </ul>
+      <div class="card-links">
+        <a href="https://www.ica.se/butiker/nara/goteborg/ica-tangen-1003744/" target="_blank" rel="noopener">
+          <span>
+            <strong>Ica Nära Tången</strong>
+            <span class="detail">The closest grocery store</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://www.coop.se/butiker-erbjudanden/coop/coop-styrso/" target="_blank" rel="noopener">
+          <strong>Coop Styrsö</strong>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
 
       <h3>Beaches &amp; Swimming</h3>
       <ul class="clean">
@@ -528,7 +538,7 @@
     <section id="inspiration">
       <h2>Inspiration &amp; Reading</h2>
       <p class="muted">Learn more about what makes Styrsö special.</p>
-      <div class="inspiration-links">
+      <div class="card-links">
         <a href="https://hikedaway.com/blogs/adventures/styrso-the-gothenburg-archipelago" target="_blank" rel="noopener">
           Styrsö &amp; the Gothenburg Archipelago
           <span class="arrow">&rarr;</span>
