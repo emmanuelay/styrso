@@ -314,6 +314,13 @@
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
       font-size: 0.95rem;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .contact-card a.contact-method:hover {
+      background: rgba(255,255,255,0.25);
     }
 
     /* Footer */
@@ -388,11 +395,11 @@
       <div class="info-grid">
         <div class="info-card">
           <div class="label">Check-in</div>
-          <div class="value">[Time]</div>
+          <div class="value">15:00</div>
         </div>
         <div class="info-card">
           <div class="label">Check-out</div>
-          <div class="value">[Time]</div>
+          <div class="value">11:00</div>
         </div>
         <div class="info-card">
           <div class="label">Address</div>
@@ -436,9 +443,8 @@
       <ul class="rules">
         <li>No smoking indoors</li>
         <li>No parties or events</li>
-        <li>Quiet hours: [Times]</li>
-        <li>Maximum number of guests: [Number]</li>
-        <li>Pets: [Allowed / Not allowed]</li>
+        <li>Maximum number of guests: 5</li>
+        <li>Pets: Not allowed</li>
         <li>Please respect the neighbors and the peaceful island environment</li>
       </ul>
     </section>
@@ -454,7 +460,7 @@
           <div class="value"><strong>112</strong></div>
         </div>
       </div>
-      <p style="margin-top: 1rem;">For urgent issues (water leak, electricity, etc.), contact us immediately at <strong>[Phone Number]</strong>.</p>
+      <p style="margin-top: 1rem;">For urgent issues (water leak, electricity, etc.), contact us immediately at <strong><a href="tel:+46736536615">+46 73 653 66 15</a></strong>.</p>
     </section>
 
     <hr class="divider">
@@ -579,8 +585,8 @@
         <h2>Need Anything?</h2>
         <p>Don't hesitate to reach out &mdash; we're happy to help.</p>
         <div class="contact-methods">
-          <div class="contact-method">Phone / WhatsApp: [Number]</div>
-          <div class="contact-method">Email: [Email]</div>
+          <a class="contact-method" href="tel:+46736536615">Phone / WhatsApp: +46 73 653 66 15</a>
+          <a class="contact-method" href="mailto:vesna@block21.com">Email: vesna@block21.com</a>
         </div>
       </div>
     </section>
